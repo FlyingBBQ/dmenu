@@ -138,7 +138,7 @@ drawhighlights(struct item *item, int x, int y, int maxw)
 			/* get indentation */
 			c = *highlight;
 			*highlight = '\0';
-			indent = TEXTW(item->text);
+			indent = TEXTW(item->text) - 1;
 			*highlight = c;
 
 			/* highlight character */

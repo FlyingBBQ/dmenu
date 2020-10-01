@@ -86,7 +86,7 @@ index e82f34c..02b59a7 100644
 +			/* get indentation */
 +			c = *highlight;
 +			*highlight = '\0';
-+			indent = TEXTW(item->text);
++			indent = TEXTW(item->text) - 1;
 +			*highlight = c;
 +
 +			/* highlight character */
